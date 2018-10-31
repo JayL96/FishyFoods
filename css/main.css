@@ -1,0 +1,754 @@
+/*	
+	=======================
+	main.css
+	by Jamie Laidlaw
+	
+	Made for Assignment 2 of the Advanced Web Development Unit.
+	
+	Description:
+	This file is for the design of Fishy Foods.
+	=======================
+*/
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+html {
+  height: 100%;
+}
+body {
+	font-family: 'Titillium Web', sans-serif;
+	opacity: 0;
+	background: linear-gradient(to bottom, #046fa0 0%,#0f3e7a 11%,#7db9e8 99%,#7db9e8 99%,#7db9e8 100%);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+	
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1s;
+	animation-fill-mode:forwards;
+	overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+}
+p {
+	font-size: 18px;
+}
+h2 {
+	font-size: 32px;
+	font-weight: 300;
+	line-height: 32px;
+}
+h3 {
+	font-size: 24px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+header h1 {
+	float: middle;
+}
+header .text-fields {
+	text-align: right;
+}
+header .block {
+	padding-top: 5px;
+}
+
+header .block a {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#login-box {
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 650px;
+	margin: 0 auto;
+	background: rgba(125, 185, 232, 0.1);
+	min-height: 150px;
+	padding: 25px;
+	z-index: 9999;
+}
+#login-box .logo .logo-caption {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	margin-bottom: 0px;
+}
+#login-box .logo .tweak {
+	color: #ff5252;
+}
+#login-box .controls {
+	padding-top: 30px;
+}
+#login-box .controls input {
+	border-radius: 30px;
+	background: #6ca0c9;
+	border: 0px;
+	color: white;
+	font-family: 'Titillium Web', sans-serif;
+}
+#login-box .controls input:focus {
+	box-shadow: none;
+}
+#login-box .controls input:first-child {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+#login-box .controls input:last-child {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#login-box .controls input:hover {
+	background: #4ca2e8;
+	color: white;
+}
+#login-box button.btn-custom {
+	border-radius: 25px;
+	margin-top: 12px;
+	background:#6ca0c9;
+	border-color: #3f86bf;
+	color: white;
+	font-family: 'Titillium Web', sans-serif;
+}
+#login-box button.btn-custom:hover{
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	background: #4ca2e8;
+	border-color: #3998e5;
+}
+#contact-box {
+	position: relative;
+	background: rgba(125, 185, 232, 0.1);
+	-webkit-box-flex: 1;
+	margin: 20px;
+	padding: 20px;
+	transform: translateY(-1%);
+	left: 2%;
+	height: 430px;
+}
+#contact-box .logo .logo-caption {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	margin-bottom: 0px;
+}
+#contact-box .logo .tweak {
+	color: #ff5252;
+}
+#contact-box .controls {
+	padding-top: 30px;
+}
+#contact-box .controls input {
+	border-radius: 30px;
+	background: #6ca0c9;
+	border: 0px;
+	color: white;
+	font-family: 'Titillium Web', sans-serif;
+}
+#contact-box .controls input:focus {
+	box-shadow: none;
+}
+#contact-box .controls input:first-child {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+#contact-box .controls input:last-child {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#contact-box .controls input:hover {
+	background: #5ca2e8;
+	color: white;
+}
+#contact-box button.btn-custom {
+	border-radius: 25px;
+	margin-top: 12px;
+	background:#6ca0c9;
+	border-color: #3f86bf;
+	color: white;
+	font-family: 'Titillium Web', sans-serif;
+}
+#contact-box button.btn-custom:hover{
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	background: #4ca2e8;
+	border-color: #3998e5;
+}
+textarea {
+	width:1150px;
+	height:125px;
+	resize: none;
+	border-radius: 12px;
+	background: #6ca0c9;
+	border: 0px;
+	outline: none;
+	color: white;
+	font-family: 'Titillium Web', sans-serif;
+}
+#account-menu{
+	position: relative;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	max-width: 1000px;
+}
+#side-box{
+	position: relative;
+	z-index: 1;
+	background: rgba(125, 185, 232, 0.1);
+	-webkit-box-flex: 1;
+	margin: 20px;
+	padding: 20px;
+	transform: translateY(40%);
+	left: 15%;
+}
+#side-box ul li{
+	list-style: square;
+	width: 100%;
+	color: white;
+}
+
+#side-box ul li a{
+	text-decoration: none;
+	color: white;
+	width: 100%;
+}
+
+#side-box ul li a:hover{
+	text-decoration: none;
+	color: #00ffff;
+	background-color: #4ca2e8;
+	width: 100%;
+}
+#account-box {
+	position: relative;
+	background: rgba(125, 185, 232, 0.1);
+	-webkit-box-flex: 1;
+	margin: 20px;
+	padding: 20px;
+	transform: translateY(40%);
+	left: 15%;
+}
+#account-box .logo .logo-caption {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	margin-bottom: 0px;
+}
+#account-box .logo .tweak {
+	color: #ff5252;
+}
+#account-box .controls {
+	padding-top: 30px;
+}
+
+#account-box button.btn-custom {
+	border-radius: 25px;
+	margin-top: 12px;
+	background:#6ca0c9;
+	border-color: #3f86bf;
+	color: white;
+	font-family: 'Titillium Web', sans-serif;
+}
+#account-box button.btn-custom:hover{
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	background: #4ca2e8;
+	border-color: #3998e5;
+}
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+}
+ 
+input[type=text]:hover, textarea:hover {
+  background: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+}
+.form-control::-webkit-input-placeholder { color: #d9d9d9; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: #d9d9d9; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: #d9d9d9; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: #d9d9d9; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: #d9d9d9; }  /* Microsoft Edge */
+textarea::-webkit-input-placeholder { color: #d9d9d9; }  /* WebKit, Blink, Edge */
+textarea:-moz-placeholder { color: #d9d9d9; }  /* Mozilla Firefox 4 to 18 */
+textarea::-moz-placeholder { color: #d9d9d9; }  /* Mozilla Firefox 19+ */
+textarea:-ms-input-placeholder { color: #d9d9d9; }  /* Internet Explorer 10-11 */
+textarea::-ms-input-placeholder { color: #d9d9d9; }  /* Microsoft Edge */
+#login-box a {
+	color: #fff;
+}
+
+#user:focus{
+    color:#fff;   
+}
+#pwd:focus{
+    color:#fff;   
+}
+#contact-subject:focus{
+    color:#fff;   
+}
+
+#errorMessage{width:100%;margin-top:20px;color:#8b0000;font-weight:bold;}
+
+.row {
+	position: fixed;
+	top: 10%;
+	left: 13%;
+}
+
+#container {
+	max-width: 100%;
+	margin: 20px 0px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-flex: 1;
+}
+
+#nav {
+	position: fixed;
+	width: 100%;
+	background-color: #046fa0;
+}
+#nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		font-size: 15px;
+}
+#nav li {
+		float: left;
+		list-style: none;
+}
+#nav li a {
+		display: block;
+		color: #fff;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+}
+#nav li a:hover {
+		background-color: #82c6ff;
+		color: #00ffff;
+}
+#nav .active {
+		background-color: #4ca2e8;
+}
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0rem;
+  background-color: #6ca0c9;
+  display: inline-block;
+}
+
+ul.products {
+	padding: 0;
+	margin: 0;
+	max-width: 2000px;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	text-align: center;
+}
+ul.products li {
+	display: inline-block;
+	max-width: 128px;
+	padding: 1px;
+	background: rgba(165, 235, 255, 0.1);
+	margin: 5px;
+	border: 0 0 5px rgba(81, 203, 238, 1);  
+	color: #3D3D3D;
+}
+
+ul.products input[type=number] {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 5px;
+  margin: 5px 1px 15px 25px;
+}
+
+button, .button{
+	background: #6ca0c9;
+	min-width: 100px;
+	border: none;
+	padding: 10px;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	color: #FFF;
+	min-height: 15px;
+	font-family: 'Titillium Web', sans-serif;
+	border-radius: 15px;
+}
+button:hover, .button:hover{
+	background-color: #4ca2e8;
+}
+
+.product-thumb{
+	text-align:center;
+}
+
+ul.shopping-cart{
+	position: fixed;
+	top: 100px;
+	right: 0;
+	background: rgba(165, 235, 255, 0.1);
+	color: white;
+	padding: 10px;
+	min-width: 250px;
+	list-style: none;
+	font-size: 0.8em;
+	border: 0 0 5px rgba(81, 203, 238, 1);
+}
+ul.shopping-cart .cart-itm {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 8px;
+}
+ul.shopping-cart .cart-itm:last-child{
+	border-bottom: none;
+	margin-bottom: 0px;
+}
+ul.shopping-cart .cart-itm .remove-itm{
+	float: right;
+	font-size: 1.5em;
+}
+ul.shopping-cart .cart-itm .remove-itm a{
+	text-decoration:none;
+	color:#000;
+}
+.cart-total-text a{
+	float:right;
+}
+
+.cart-view-table-front{
+	font-size: 12px;
+	position: fixed;
+	right: 10px;
+	max-width: 350px;
+	font-family: 'Titillium Web', sans-serif;
+}
+.cart-view-table-front h3{
+	text-align: center;
+	padding: 0;
+	margin: 0px 0px 6px 0px;
+}
+.cart-view-table-front, .cart-view-table-back {
+	max-width: 850px;
+	background: rgba(165, 235, 255, 0.1);
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.12);
+	border: 0 0 5px rgba(81, 203, 238, 1);
+}
+.cart-view-table-front table th, .cart-view-table-back table th{
+	text-align: left;
+	color: white;
+}
+.cart-view-table-front table thead, .cart-view-table-back table thead{
+	background-color: #046fa0;
+	color: white;
+}
+.cart-view-table-front table tbody tr.even, .cart-view-table-back table tbody tr.even{
+	background-color: #00557c;
+	color: white;
+}
+.cart-view-table-front table tbody tr.odd, .cart-view-table-back table tbody tr.odd{
+	background-color: #00557c;
+	color: white;
+}
+.cart-view-table-front button, .cart-view-table-front .button, .cart-view-table-back button, .cart-view-table-back .button{
+	margin: 10px 1px;
+	float: right;
+}
+
+
+/* Bubble stuff */
+
+#background-wrap {
+    bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+@-webkit-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-moz-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-webkit-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@-moz-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+.x1 {
+    -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: -5%;
+	top: 5%;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x2 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 5%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x3 {
+    -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 10%;
+	top: 40%;
+	
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.x4 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 20%;
+	top: 0;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x5 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 30%;
+	top: 50%;
+	
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.x6 {
+    -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 50%;
+	top: 0;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.x7 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 65%;
+	top: 70%;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x8 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 10%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x9 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 90%;
+	top: 50%;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x10 {
+    -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x11 {
+    -webkit-animation: animateBubble 26s linear infinite, sideWays 1s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 26s linear infinite, sideWays 1s ease-in-out infinite alternate;
+	animation: animateBubble 26s linear infinite, sideWays 1s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.2);
+	-moz-transform: scale(0.2);
+	transform: scale(0.2);
+}
+
+.bubble {
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	
+    height: 200px;
+	position: absolute;
+	width: 200px;
+}
+
+.bubble:after {
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	-moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	
+	content: "";
+    height: 180px;
+	left: 10px;
+	position: absolute;
+	width: 180px;
+}
